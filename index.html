@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZEALER TOOL-手机评测-科技产品购买指导工具</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="css/common_ZDY.css" type="text/css" />
+  <script src="jQuery/jquery-1.12.1.js"></script>
+</head>
+<body>
+<!--nav start-->
+<div id="nav">
+  <div id="nav-in" class="w clearfix">
+    <!--logo-->
+    <div id="logo" class="fl">
+      <h1><a href="javascript:void(0);"></a></h1>
+    </div>
+    <!--左侧导航-->
+    <div id="left" class="fl">
+      <ul>
+        <li><a href="javascript:void(0);">首页</a></li>
+        <li><a href="javascript:void(0);">机型列表</a></li>
+        <li><a href="javascript:void(0);">专题</a></li>
+        <li><a href="javascript:void(0);">实验室</a></li>
+      </ul>
+    </div>
+    <!--右侧搜索框，登录-->
+    <div id="right" class="fr">
+      <!--搜索框-->
+      <div id="search" class="fl">
+        <input type="text" placeholder="搜索手机或专题" class="searchInput fl" />
+        <span class="fl"></span>
+      </div>
+      <!--登录-->
+      <div id="login" class="fl">
+        <ul>
+          <li><a href="javascript:void(0);">登录</a></li>
+          <li><a href="javascript:void(0);">注册</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!--nav end  -->
+
+<!--content start-->
+<div id="content">
+  <!--leftsidebar start-->
+  <div id="leftw">
+    <div id="leftsidebar">
+      <ul>
+        <li>
+          <a href="javascript:void(0);" class="atitle">ZEALER 出品</a>
+          <div>
+            <a href="javascript:void(0);">一加手机3 测评</a><a href="javascript:void(0);">HTC 测评</a><a href="javascript:void(0);">红米Pro 简评</a><a href="javascript:void(0);">华为荣耀8 简评</a>
+          </div>
+        </li>
+        <li id="phone">
+          <a href="javascript:void(0);" class="atitle">手机</a>
+          <div>
+            <a href="javascript:void(0);">Apple/苹果</a><a href="javascript:void(0);">SAMUNG/三星</a><a href="javascript:void(0);">一加 3</a><a href="javascript:void(0);">魅族Pro6</a>
+          </div>
+          <!--活动区域-->
+          <div class="active">
+            <div id="list">
+              <!--子列表-->
+              <div id="listTitle">
+                <ul>
+                  <li><a href="javascript:void(0);">Apple</a></li>
+                  <li><a href="javascript:void(0);">三星</a></li>
+                  <li><a href="javascript:void(0);">华为</a></li>
+                  <li><a href="javascript:void(0);">小米</a></li>
+                  <li><a href="javascript:void(0);">vivo</a></li>
+                  <li><a href="javascript:void(0);">OPPO</a></li>
+                  <li><a href="javascript:void(0);">魅族</a></li>
+                  <li><a href="javascript:void(0);">一加</a></li>
+                  <li><a href="javascript:void(0);">锤子</a></li>
+                  <li><a href="javascript:void(0);">LG</a></li>
+                  <li><a href="javascript:void(0);">金立</a></li>
+                  <li><a href="javascript:void(0);">努比亚</a></li>
+                  <li><a href="javascript:void(0);">酷派</a></li>
+                  <li><a href="javascript:void(0);">ZUK</a></li>
+                  <li><a href="javascript:void(0);">360</a></li>
+                  <li><a href="javascript:void(0);">ASUS</a></li>
+                  <li><a href="javascript:void(0);">BlackBerry</a></li>
+                  <li><a href="javascript:void(0);">Gigaset</a></li>
+                  <li><a href="javascript:void(0);">Google</a></li>
+                  <li><a href="javascript:void(0);">HTC</a></li>
+                  <li><a href="javascript:void(0);">IUNI</a></li>
+                  <li><a href="javascript:void(0);">Microsoft</a></li>
+                  <li><a href="javascript:void(0);">Motorola</a></li>
+                  <li><a href="javascript:void(0);">Nokia</a></li>
+                  <li><a href="javascript:void(0);">SONY</a></li>
+                  <li><a href="javascript:void(0);">TCL</a></li>
+                  <li><a href="javascript:void(0);">YotaPhone</a></li>
+                  <li><a href="javascript:void(0);">阿里云</a></li>
+                  <li><a href="javascript:void(0);">朵唯</a></li>
+                  <li><a href="javascript:void(0);">海信</a></li>
+                  <li><a href="javascript:void(0);">乐视</a></li>
+                  <li><a href="javascript:void(0);">联想</a></li>
+                  <li><a href="javascript:void(0);">美图手机</a></li>
+                  <li><a href="javascript:void(0);">纽曼</a></li>
+                  <li><a href="javascript:void(0);">中兴</a></li>
+                </ul>
+              </div>
+              <!--滚动条-->
+              <div id="scroll" class="scroll"><!--装滚动条的层-->
+                <div class="bar" id="bar"></div><!--滚动条-->
+              </div>
+            </div>
+            <!--detailed 详细的机型-->
+            <div id="detailed"></div>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="atitle">测评专题</a>
+          <div>
+            <a href="javascript:void(0);">全部专题</a><a href="javascript:void(0);">手机探秘</a><a href="javascript:void(0);">见机"拆"机</a>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:void(0);" class="atitle">ZEALER LAB</a>
+          <div class="lastdiv">
+            <a href="javascript:void(0);">简介</a><a href="javascript:void(0);">检测&咨询</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--leftsidebar end-->
+
+  <!--banner start-->
+  <div id="banner">
+    <!--轮播大图-->
+    <div id="img">
+      <ul>
+        <li><a href="javascript:void(0);"></a></li>
+        <li><a href="javascript:void(0);" class="second"></a></li>
+        <li><a href="javascript:void(0);" class="third"></a></li>
+        <li><a href="javascript:void(0);" class="fouth"></a></li>
+      </ul>
+    </div>
+    <!--右侧-->
+    <!--小圆点-->
+    <div id="circle">
+      <ol></ol>
+    </div>
+    <!--左右焦点-->
+    <div id="arrow">
+      <span id="arrRight"></span>
+      <span id="arrLeft"></span>
+    </div>
+
+  </div>
+  <!--banner end  -->
+
+  <!--hotType start-->
+  <div id="hotType" class="w">
+    <h2>热门机型</h2>
+    <!--上部分机型-->
+    <div id="typetop" class="clearfix">
+      <ul>
+        <li><a href="javascript:void(0);"><img src="img/LAB/huaweimate9.png" alt=""></a></li>
+        <li><a href="javascript:void(0);"><img src="img/LAB/xiaomimix.png" alt=""></a></li>
+        <li><a href="javascript:void(0);"><img src="img/LAB/iphone7.png" alt=""></a></li>
+        <li class="listli"><a href="javascript:void(0);"><img src="img/LAB/iphone7plus.png" alt=""></a></li>
+      </ul>
+    </div>
+    <!--下部分机型-->
+    <div id="typebottom" class="clearfix">
+      <ul>
+        <li><a href="javascript:void(0);"><img src="img/LAB/galaxys7-vs-iphone6s.png" alt=""></a></li>
+        <li class="listli"><a href="javascript:void(0);"><img src="img/LAB/oneplus3-vs-iphone6s.png" alt=""></a></li>
+      </ul>
+    </div>
+  </div>
+  <!--hotType  end -->
+
+  <!--telSecret start-->
+  <div id="telSecret" class="w">
+    <h2>手机探秘</h2>
+    <div id="tTop" class="clearfix">
+      <div id="tTopleft" class="fl">
+        <a href="javascript:void(0);"><img src="img/LAB/galaxy-note7.png" alt=""></a>
+      </div>
+      <div id="tTopright">
+        <a href="javascript:void(0);"><img src="img/LAB/galaxy-note7-screen.png" alt=""></a>
+        <div id="imgbottom">
+          <a href="javascript:void(0);"><img src="img/LAB/note7.png" alt="" width="280"></a>
+          <a href="javascript:void(0);" class="fr"><img src="img/LAB/note7-power.png" alt="" width="280"></a>
+        </div>
+
+      </div>
+    </div>
+    <div id="tBottom">
+      <div id="tbleft" class="fl">
+        <a href="javascript:void(0);"><img src="img/LAB/earphone.png" alt=""></a>
+      </div>
+      <div id="tright">
+        <div id="trtop">
+          <a href="javascript:void(0);"><img src="img/LAB/meilane.png" alt=""></a>
+          <a href="javascript:void(0);" class="fr"><img src="img/LAB/snapseed.png" alt=""></a>
+        </div>
+        <div id="trbottom">
+          <a href="javascript:void(0);"><img src="img/LAB/sw2700pt.png" alt=""></a>
+          <a href="javascript:void(0);" class="fr"><img src="img/LAB/choudianbao.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--telSecret end  -->
+
+  <!--footer start-->
+  <div id="footer">
+    <div id="footertop">
+      <div class="weixin">
+        <p>官方微信</p>
+        <img src="img/LAB/img_67d27da0_wechatQR.png" alt="">
+      </div>
+      <div class="app">
+        <p>App下载</p>
+        <img src="img/LAB/img_67d27f0c_appQR.png" alt="">
+      </div>
+    </div>
+    <div id="footerbottom">
+      <p>
+        <span></span> | <i></i> | 粤ICP备 12076188号-1<a href="javascript:void(0);">
+        <img src="img/LAB/newGovIcon.gif" alt="" width="80">
+      </a>
+      </p>
+    </div>
+  </div>
+  <!--footer end  -->
+
+  <!--back start-->
+  <div id="back">
+    <a href="javascript:void(0);" class="email"></a>
+    <a href="javascript:void(0);" class="smile"></a>
+    <a href="#" class="triangle"></a>
+  </div>
+  <!--back end-->
+
+</div>
+
+<script src="jQuery/jQuery_ZDY.js"></script>
+
+</body>
+</html>

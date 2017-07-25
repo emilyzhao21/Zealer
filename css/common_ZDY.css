@@ -1,0 +1,502 @@
+/*CSS初始化*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: #ccc;
+}
+ul,ol{
+  list-style:none;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+  font:14px "Microsoft YaHei UI";
+}
+a:hover{
+  color:#0070fd;
+}
+input , button{
+  border:0;
+  outline:none;
+}
+/*定义版心*/
+.w{
+  width: 1120px;
+  margin: 0 auto;
+}
+/*左浮动*/
+.fl{
+  float: left;
+}
+/*右浮动*/
+.fr{
+  float: right;
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index:10; /*改变层级，始终在最上面显示*/
+}
+/*清除浮动*/
+.clearfix:before , .clearfix:after{
+  content:"";
+  display: block;
+}
+.clearfix:after{
+  clear:both;
+}
+.clearfix{
+  *zoom:1;
+}
+/*nav start*/
+#nav {
+  height: 60px;
+  width: 100%; /*可视区域显示全部*/
+  line-height: 60px;
+  background-color: rgba(0, 0, 0, .9);
+  position: fixed;
+  top:0;
+  right:0;
+  z-index:100;
+}
+
+#nav-in {
+  height: 60px;
+}
+
+/*logo*/
+#logo h1 {
+  height: 60px;
+}
+
+#logo h1 a {
+  display: inline-block;
+  width: 165px;
+  height: 60px;
+  background: url("../img/LAB/img_9633f218_logo.png") center center no-repeat;
+}
+
+/*左侧导航*/
+#left {
+  margin-left: 70px;
+}
+
+#left ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+/*右侧搜索框，登录*/
+/*搜索框*/
+#search {
+  margin-top: 15px;
+}
+
+#search .searchInput {
+  width: 170px;
+  height: 30px;
+  color: #999;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  padding: 0 15px;
+  background: #353536;
+}
+
+#search span {
+  display: inline-block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background: #353536 url("../img/LAB/img_9633f557_header_img.png") 6px 8px no-repeat;
+}
+
+/*登录*/
+#login {
+  height: 60px;
+  width: 100px;
+  margin-left: 55px;
+}
+
+#login ul li {
+  float: left;
+  padding: 0 5px;
+}
+
+/*nav end*/
+
+/*content start*/
+#content{
+  margin-top: 60px;
+  position: relative;
+}
+/*边导航栏*/
+#leftw{
+  position: relative;
+  z-index:10;
+  margin: 0 auto;
+  width: 1120px;
+}
+#leftsidebar {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 280px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+#leftsidebar ul {
+  padding-top: 20px;
+}
+
+#leftsidebar ul li {
+  height: 100px;
+  padding: 20px 20px 0 30px;
+}
+
+#leftsidebar ul li a {
+  color: #fff;
+}
+
+#leftsidebar ul li .atitle {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+#leftsidebar ul li.bgc{
+  background-color: #0091FF;
+}
+#leftsidebar ul li div {
+  border-bottom: 1px solid #ccc;
+}
+
+#leftsidebar ul li .lastdiv {
+  border: none;
+}
+
+#leftsidebar ul li div a {
+  display: inline-block;
+  width: 110px;
+  margin-bottom: 12px;
+}
+
+/*活动区域*/
+.active{
+  width: 420px;
+  height: 500px;
+  position: absolute;
+  float: left;
+  top:0;
+  left: 280px;
+  overflow: hidden;
+  display: none;
+}
+.active #list{
+  position: relative;
+  width: 140px;
+  overflow: hidden;
+}
+.active #list #listTitle{
+  width: 180px;
+  height: 500px;
+  float: left;
+  background-color: #0F0F12;
+  padding-bottom:10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: relative;
+}
+.active #list #listTitle ul{
+  position: absolute;
+  top: 0;
+  left:0;
+  padding-bottom:15px;
+}
+.active #list #listTitle ul li{
+  padding:10px 0 15px 25px;
+  height: 20px;
+  width: 110px;
+  line-height: 25px;
+}
+/*滚动条*/
+.active #list #scroll{
+  width: 4px;
+  height: 500px;
+  position: relative;
+}
+.active #list #scroll #bar{
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 136px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+/*详细手机型号*/
+.active #detailed{
+  height: 500px;
+  width: 180px;
+  float: left;
+  position: absolute;
+  top:0;
+  left: 140px;
+  background-color: #181A1D;
+}
+.active #detailed ul{
+  padding:20px 0;
+}
+.active #detailed ul li{
+  padding: 0 20px 35px 40px;
+  width: 140px;
+  height: 10px;
+}
+.active #detailed ul li a{
+  color: #fff;
+  font-size: 14px;
+}
+.active #detailed ul li a:hover{
+  color: #0091FF;
+}
+/*右侧*/
+/*小圆点*/
+#circle ol {
+  position: absolute;
+  top: 460px;
+  right: 460px;
+}
+
+#circle ol li {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+  float: left;
+  margin: 0 15px;
+  border-radius: 50%;
+}
+
+#circle ol li.current {
+  background-color: #0091FF;
+}
+
+/*左右焦点*/
+#arrow {
+  opacity: 0;
+}
+
+#arrow span {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 60px;
+  background: url(../img/LAB/img_c995b9a5_slider-arrow.png) no-repeat;
+}
+
+#arrow #arrLeft {
+  left: 50px;
+  top: 200px;
+}
+#arrow #arrRight {
+  background-position: -32px 0;
+  right: 50px;
+  top: 200px;
+}
+
+/*banner start*/
+#banner {
+  height: 500px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+/*轮播图*/
+#img {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+#img ul {
+  position: absolute;
+  left: 0px;
+  top: 0;
+}
+
+#img ul li {
+  float: left;
+}
+
+#img ul li a {
+  display: block;
+  height: 500px;
+  background: url("../img/LAB/banner1.jpg") center center no-repeat;
+}
+
+#img ul li a.second {
+  background: url("../img/LAB/banner2.jpg") center center no-repeat;
+}
+
+#img ul li a.third {
+  background: url("../img/LAB/banner3.jpg") center center no-repeat;
+}
+
+#img ul li a.fouth {
+  background: url("../img/LAB/banner4.jpg") center center no-repeat;
+}
+
+/*banner end */
+
+/*hotType start*/
+
+#hotType h2 {
+  font-weight: 400;
+  color: #31343b;
+  margin-bottom: 10px;
+}
+
+#hotType #typetop {
+  height: 220px;
+}
+
+#hotType #typetop ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+#hotType #typetop ul .listli {
+  margin-right: 0;
+}
+
+#hotType #typebottom ul li {
+  float: left;
+  margin-right: 15px;
+}
+
+#hotType #typebottom ul li img {
+  height: 222px;
+}
+
+#hotType #typebottom ul .listli {
+  margin-right: 0;
+}
+
+/*hotType end */
+/*telSecret start*/
+#telSecret {
+  margin-top: 20px;
+}
+
+#telSecret h2 {
+  font-weight: 400;
+  color: #31343b;
+  margin-bottom: 10px;
+}
+
+#telSecret #tTop {
+  margin-bottom: 15px;
+}
+
+#telSecret #tTopright #imgbottom {
+  margin-top: -4px;
+}
+
+#telSecret #tBottom #tright #trtop img {
+  margin-left: -1px;
+}
+
+#telSecret #tBottom #tright #trbottom img {
+  margin-top: -4px;
+  margin-left: -1px;
+}
+
+/*telSecret end */
+
+/*footer start*/
+#footer {
+  height: 300px;
+  margin: 50px auto 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+#footer #footertop {
+  border-bottom: 1px solid #ccc;
+  height: 240px;
+}
+
+#footer #footertop .weixin, .app {
+  display: inline-block;
+  margin-top: 60px;
+}
+
+#footer #footertop .weixin {
+  margin-right: 150px;
+}
+
+#footer #footertop p {
+  margin-bottom: 15px;
+  text-align: left;
+  color: #666;
+}
+
+#footerbottom {
+  line-height: 60px;
+  color: #d1cbdd;
+  font-size: 12px;
+}
+
+#footerbottom span, i, a {
+  display: inline-block;
+}
+
+#footerbottom span {
+  width: 131px;
+  height: 15px;
+  background: url("../img/LAB/img_67d2766a_font1.png") no-repeat;
+}
+
+#footerbottom i {
+  width: 80px;
+  height: 15px;
+  background: url("../img/LAB/img_67d270f7_font2.png") no-repeat;
+}
+
+#footerbottom a img {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/*footer end */
+
+/*back start*/
+#back {
+  position: fixed;
+  right:10px;
+  bottom:0;
+  display: none;
+}
+#back a{
+  display: block;
+  margin-bottom:5px;
+  width: 52px;
+  height: 52px;
+  border-radius:50%;
+  background: #ccd7e3 url(../img/LAB/img_67d27f86_footer_up.png) repeat;
+}
+#back .email {
+  background-position: 6px -34px;
+}
+#back .smile{
+  background-position: 6px -74px;
+}
+#back .triangle{
+  background-position: 6px 6px;
+}
+/*back end */
+/*content end*/
